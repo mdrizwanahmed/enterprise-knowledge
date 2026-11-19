@@ -1,0 +1,35 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+backend/data/*
+!backend/data/.gitkeep
+frontend/node_modules/
+frontend/dist/
+
+# Local dependencies
+.venv/
+venv/
+node_modules/
+__pycache__/
+.pytest_cache/
+
+# Terraform generated files
+**/.terraform/
+**/terraform.tfstate
+**/terraform.tfstate.*
+**/crash.log
+
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Generated models and caches
+*.pkl
+*.safetensors
+*.gguf
+*.pyc
+.DS_Store

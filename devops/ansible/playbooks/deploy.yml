@@ -1,0 +1,13 @@
+---
+- name: Deploy Enterprise Knowledge Platform
+  hosts: control
+  gather_facts: true
+
+  vars:
+    application_name: Enterprise Knowledge Intelligence Platform
+
+  roles:
+    - knowledge_platform
+
+  tags:
+    - deployment

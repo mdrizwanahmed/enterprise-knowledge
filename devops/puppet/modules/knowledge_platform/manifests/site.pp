@@ -1,0 +1,1 @@
+include knowledge_platform

@@ -1,0 +1,7 @@
+---
+- name: Restart knowledge platform web container
+  ansible.builtin.command:
+    argv:
+      - docker
+      - restart
+      - terraform-knowledge-backend

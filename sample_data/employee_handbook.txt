@@ -1,0 +1,11 @@
+Example Employee Handbook
+
+Annual leave: Employees receive 18 days of paid annual leave per calendar year. Leave should be requested through the HR portal at least five working days in advance. Approval depends on team coverage and manager approval.
+
+Sick leave: Employees may take up to 10 days of paid sick leave per year. For absences longer than two consecutive working days, employees should provide a medical certificate to HR.
+
+Remote work: Employees may work remotely up to two days per week with manager approval. Some roles require on-site attendance for operational or customer needs.
+
+Information security: Employees must use multi-factor authentication for company accounts. Company data must not be uploaded to personal cloud storage. Suspected security incidents should be reported to the IT help desk immediately.
+
+Equipment: Company laptops are intended for work purposes. Lost or stolen devices must be reported to IT and the employee's manager as soon as possible.

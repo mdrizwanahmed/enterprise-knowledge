@@ -1,0 +1,26 @@
+---
+- name: Copy application page to control machine
+  ansible.builtin.copy:
+    src: index.html
+    dest: /tmp/knowledge-platform-index.html
+    mode: '0644'
+
+- name: Deploy page into Terraform-managed Nginx container
+  ansible.builtin.command:
+    argv:
+      - docker
+      - cp
+      - /tmp/knowledge-platform-index.html
+      - terraform-knowledge-backend:/usr/share/nginx/html/index.html
+  changed_when: true
+  notify: Restart knowledge platform web container
+
+- name: Check deployed web application
+  ansible.builtin.uri:
+    url: http://localhost:8082
+    status_code: 200
+  register: web_check
+
+- name: Display deployment result
+  ansible.builtin.debug:
+    msg: "Knowledge Platform deployment verified. HTTP {{ web_check.status }}"
